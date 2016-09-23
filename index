@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-g">
+    <title>Home | martinthomas.github.io</title>
+    </head>
+    <body>
+    <header>
+        <h1>martinthomas.github.io</h1>
+        <img alt="The logo for martinthomas.github.io" src="#">
+        </header>
+        <nav> Links go here</nav>
+        <main>
+        <h1>Home</h1>
+            <p> This is my home page.</p>
+        </main>
+        <footer>
+        <p>Items related to the site</p>
+        </footer>
+    </body>
+  </html>      
