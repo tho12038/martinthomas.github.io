@@ -3,9 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Practice File</title>
+    <title>Positioning</title>
     <link href="/homework/css/screen.css" type="text/css" rel="stylesheet" media="screen">
-    <meta name="viewport" content="width=device-width">
+    <style>
+    .relative{
+        position: relative;
+        left: 50px;
+        top: 50px;
+        }
+        main{
+            background-color: azure;
+        }
+        div#wrapper{
+            background-color: bisque;
+        }
+        .absolute{
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,12 +35,9 @@
         </nav>
         <main>
             <h1>Practice Document</h1>
-            <p>We are practicing with images and paths to ensure we know how to do them.</p>
-
-                <!--Put the image in the img element below-->
-                <figure>
-                    <img alt="Sux Image" src="../images/thumbnail_sux.jpg">
-                </figure>
+            <p class="relative"> Relative Position</p>
+            <p class="absolute">Absolute Position</p>
+            <p class="fixed">Fixed Position</p>
 
         </main>
         <footer>
