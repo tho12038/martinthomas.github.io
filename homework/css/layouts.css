@@ -1,0 +1,36 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font: 20px "times new roman", times, serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+
+.row{
+    overflow: hidden;
+}
+
+#page-nav,
+main,
+#page-aside{
+    float: left;
+}
+
+#page-nav,
+#page-aside{
+    width: 25%
+}
+
+main{
+    width:  50%
+}
