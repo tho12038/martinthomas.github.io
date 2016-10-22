@@ -45,7 +45,7 @@ h4{
     min-width: 350px;
 }
 ul{
-    font-size: .6em;
+    font-size: 24px;
     list-style-position: inside;
     align-content: center;
     text-align: center;
@@ -59,21 +59,31 @@ img{
     margin: auto;
 }
 @media screen and (min-width: 500px){
-    @media screen and (min-width: 500px){
+        
+.top{
+    float: left;
+        }
+        .conditions{
+            float:left;
+        }
     
-#page-nav,
-main,
-#page-aside{
+.daily{
     float: left;
 }
-
-#page-nav,
-#page-aside{
-    width: 25%
-}
+    
+        .navigation{
+            float: left;
+        }
 
 main{
     width:  50%
 }
 }
-}
+@media screen and (min-width: 1024px){
+    .conditions{position: absolute; left: auto; font-size: 30px;}
+    .top{position: absolute; left:350px; width: auto;}
+    .daily{position: absolute; left: 700px; ;min-width: 500px}
+    .navigation{position:relative; top: 400px; min-width: 350px}
+    .wireframes{position:absolute; left: auto; top: 550px; min-width: 350px}
+    .copyrite{position: absolute; margin: auto; top: 1950px}
+    }
