@@ -58,32 +58,20 @@ img{
     display: block;
     margin: auto;
 }
-@media screen and (min-width: 500px){
-        
-.top{
-    float: left;
-        }
-        .conditions{
-            float:left;
-        }
-    
-.daily{
-    float: left;
+#wrapper{
+    display: flex;
+    flex-flow: row wrap;
 }
-    
-        .navigation{
-            float: left;
-        }
+#desktop, #tablet{
+    display: none;
+}
+@media only screen and (min-width: 500px){
+    #tablet{display: flex; width: 30em;}
+    #mobile{display: none;}
+}
 
-main{
-    width:  50%
+@media only screen and (min-width: 1024px){
+    #mobile{display: none;}
+    #tablet{display: none;}
+    #desktop{display: flex; width: 40em;}
 }
-}
-@media screen and (min-width: 1024px){
-    .conditions{position: absolute; left: auto; font-size: 30px;}
-    .top{position: absolute; left:350px; width: auto;}
-    .daily{position: absolute; left: 700px; ;min-width: 500px}
-    .navigation{position:relative; top: 400px; min-width: 350px}
-    .wireframes{position:absolute; left: auto; top: 550px; min-width: 350px}
-    .copyrite{position: absolute; margin: auto; top: 1950px}
-    }

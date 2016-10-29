@@ -1,36 +1,33 @@
-html *{
+html * {
     box-sizing: border-box;
 }
-
-*:before,
-*:after{
-    box-sizing: border-box;
+p{
+    font-size: 10px;
 }
-
-body{
-    font: 20px "times new roman", times, serif;
-    margin: 0;
-    padding: 0;
+.header{
+  text-align: center;
 }
-h1{
-    text-align: center;
+.container{
+    display: flex;
+    flex-direction: row;
 }
-
-.row{
-    overflow: hidden;
-}
-
-#page-nav,
-main,
-#page-aside{
-    float: left;
-}
-
-#page-nav,
-#page-aside{
-    width: 25%
-}
-
 main{
-    width:  50%
+    order: 0;
+    padding: 30px;
+    flex-grow: 1;
+}
+nav{
+    flex: 1 25%;
+}
+aside{
+    flex: 1 25;
+}
+main{
+    flex: 2 50%;
+}
+}
+
+}
+footer{
+    text-align: center;
 }
