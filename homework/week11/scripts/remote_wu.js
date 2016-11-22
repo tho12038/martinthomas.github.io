@@ -34,14 +34,14 @@ url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions/q/
   var summary = parsed_json["current_observation"]["weather"];
   var humidity = parsed_json['current_observation']['relative_humidity'];
   var wind = parsed_json['current_observation']['wind_mph'];
-  /*var feels = parsed_json['current_observation']['feelslike_f'];*/
+  
   
   $("#cityDisplay").text(city + ", " + state);
   $("#summary").text(summary);
   $("#currentTemp").text(temp_f + "°");
   $("#add1").html("Humidity:" + " " + humidity);
   $("#add2").html("Current Wind Spped is: " + wind + " " "MPH");
-  /*$("#add3").text("Feels Like: " + feels + "°");*/  
+  
                
                 
       $("#cover").fadeOut(250);
