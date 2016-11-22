@@ -39,7 +39,7 @@ console.log(parsed_json);
   $("#summary").text(summary);
   $("#currentTemp").text(temp_f + "°");
   $("#add1").text("Humidity:" + " " + humidity);
-  $("#add2").text("Current Wind Spped is: " + " " + wind + "MPH")
+  $("#add2").text("Current Wind Spped is: " + " " + wind + "MPH");
                
                 
       $("#cover").fadeOut(250);
