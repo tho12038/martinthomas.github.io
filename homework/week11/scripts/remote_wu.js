@@ -29,7 +29,6 @@ url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions/q/
 console.log(parsed_json);
   var city = parsed_json['location']['city'];
   var state = parsed_json['location']['state'];
-  $("#cityDisplay").text(city + "," + state);
   var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
   var state = parsed_json['location']['state'];
   var summary = parsed_json["current_observation"]["weather"];
