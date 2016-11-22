@@ -47,11 +47,7 @@ var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
                 $("#summary").text(summar);
                 $("#currentTemp").text(temp_f + "°");
                 $("#add1").text("Sunrise: " + sRH + ":" + sRM);
-                $("#add2").text("Sunset: " + sSH + ":" + sSM + " (military)");
-                $("#add3").text("Humidity: " + sSH + "%");
-                $("title").prepend(location + ", " + state + " | ");
-
-
+                
       $("#cover").fadeOut(250);
     }
            });
