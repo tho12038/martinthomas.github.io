@@ -23,31 +23,26 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions/astronomy/q/" + lat + "," + long + ".jsonp",       
+url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions//q/" + lat + "," + long + ".jsonp",       
   dataType : "jsonp",
   success : function(parsed_json) {
 console.log(parsed_json);
-  var location = parsed_json['location']['city'];
+  var city = parsed_json['location']['city'];
   var state = parsed_json['location']['state'];
   $("#cityDisplay").text(location + "," + state);
       
 
-var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
-            
-    var state = parsed_json['location']['state'];
-                var summar = parsed_json["current_observation"]["weather"];
-                var sRH = parsed_json["moon_phase"]["sunrise"]["hour"];
-                var sRM = parsed_json["moon_phase"]["sunrise"]["minute"];
-                var sSH = parsed_json["moon_phase"]["sunset"]["hour"];
-                var sSM = parsed_json["moon_phase"]["sunset"]["minute"];
-                var moon = parsed_json["moon_phase"]["percenthumidity"];
+                var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
+                var state = parsed_json['location']['state'];
+                var summary = parsed_json["current_observation"]["weather"];
+        
 
 
                 $("#cityDisplay").text(location + ", " + state);
                 $("#summary").text(summar);
                 $("#currentTemp").text(temp_f + "°");
                 $("#add1").text("Sunrise: " + sRH + ":" + sRM);
-        
+                $("#add2").text()
                 
       $("#cover").fadeOut(250);
     }
