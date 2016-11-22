@@ -23,7 +23,7 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-url : "https://api.wunderground.com/weather/api/d/9dcea6730ca4d03e/geolookup/conditions/astronomy/q/" + lat + "," + long + ".jsonp",       
+url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions/astronomy/q/" + lat + "," + long + ".jsonp",       
   dataType : "jsonp",
   success : function(parsed_json) {
 console.log(parsed_json);
@@ -47,6 +47,7 @@ var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
                 $("#summary").text(summar);
                 $("#currentTemp").text(temp_f + "°");
                 $("#add1").text("Sunrise: " + sRH + ":" + sRM);
+        
                 
       $("#cover").fadeOut(250);
     }
