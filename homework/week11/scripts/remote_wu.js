@@ -33,7 +33,7 @@ console.log(parsed_json);
   var temp_f = Math.round(parseInt(parsed_json['current_observation']['temp_f']));
   var state = parsed_json['location']['state'];
   var summary = parsed_json["current_observation"]["weather"];
-  var hummidity = parsed_json['current_observation']['humidity'];
+  var hummidity = parsed_json['current_observation']['relative_humidity'];
   $("#cityDisplay").text(city + ", " + state);
   $("#summary").text(summary);
   $("#currentTemp").text(temp_f + "°");
