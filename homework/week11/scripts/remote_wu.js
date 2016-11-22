@@ -34,7 +34,7 @@ console.log(parsed_json);
   var state = parsed_json['location']['state'];
   var summary = parsed_json["current_observation"]["weather"];
   var humidity = parsed_json['current_observation']['relative_humidity'];
-  var wind = parsed_json['currnet_observation']['wind_mph']
+  var wind = parsed_json['currnet_observation']['wind_mph'];
   $("#cityDisplay").text(city + ", " + state);
   $("#summary").text(summary);
   $("#currentTemp").text(temp_f + "°");
