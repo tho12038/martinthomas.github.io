@@ -40,7 +40,7 @@ url : "https://api.wunderground.com/api/9dcea6730ca4d03e/geolookup/conditions/q/
   $("#summary").text(summary);
   $("#currentTemp").text(temp_f + "°");
   $("#add1").text("Humidity:" + " " + humidity);
-  $("#add2").text("Current Wind Spped is: " + wind + " " + "MPH");
+  $("#add2").text("Current Wind Speed is: " + wind + " " + "MPH");
   $("#add3").text("Feels Like: " + feels + "°");
                
                 
