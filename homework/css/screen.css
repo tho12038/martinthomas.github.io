@@ -15,11 +15,13 @@ h1{
     font-size: .6em;
 }
 h1{
-    background-color: aqua;
-   /* padding: 16px; */
+   text-align: center;
+    font-size: .87em;
+     background-color: orange;
+    padding: 10px;
     border: 1px solid #000000;
-    margin: 10px;
-    width: 500px;
+    margin: auto;
+    min-width: 350px;
 }
 h2{
     text-align-last: center;
@@ -35,6 +37,7 @@ h3{
     margin: auto;
     min-width: 350px;
 }
+
 h4{
     margin: auto;
     text-align: center;
@@ -50,6 +53,12 @@ ul{
     align-content: center;
     text-align: center;
     
+}
+#page-nav{
+    font-size: 19px;
+    list-style-position: inside;
+    align-content: center;
+    text-align: center;
 }
 li{
 
