@@ -1,0 +1,91 @@
+.Page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Page-body {
+  display: flex;
+  flex: 1;
+  background-image: url(/final/imagesFinal/Background.png);
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  background-attachment:local;
+}
+.Main-content {
+  flex: 1;
+}
+
+.Adopted, .Available {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+}
+
+.Adopted {
+  /* put the nav on the left */
+  order: -1;
+}
+.Page,
+.Page-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.Available {
+  order: 2;
+}
+
+/*navigation elements*/
+
+#page-nav ul {
+  border: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  list-style: none;
+    position: fixed;
+    width: 100%;
+}
+
+#page-nav .flexlist li {
+  display: flex;
+  flex: auto;
+  
+    
+}
+#page-nav a {
+  display: flex;
+  flex: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 1% 5%;
+  text-decoration: none;
+}
+
+#page-nav a:hover {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.flexlist {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .Page-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .Main-content {
+    flex: 1;
+  }
+  .Adopted, .Available {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
