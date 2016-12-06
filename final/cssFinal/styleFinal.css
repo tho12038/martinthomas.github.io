@@ -4,6 +4,15 @@
   flex-direction: column;
 }
 
+.page-header {
+    display: flex;
+    background-image: url(/final/imagesFinal/banner.jpg); 
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    position: left,fixed;
+    background-size: 100% 100%;
+}
+
 .Page-body {
   display: flex;
   flex: 1;
@@ -74,6 +83,15 @@
   padding: 0;
   background-color: #000;
   color: #fff;
+}
+
+.page-footer {
+    display: flex;
+    background-image: url(/final/imagesFinal/banner.jpg); 
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    position: left;
+    background-size: 100% 100%;
 }
 
 @media (min-width: 768px) {
