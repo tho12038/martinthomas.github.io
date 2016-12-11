@@ -1,5 +1,8 @@
 $(function () {
-  $("#page-header").load("/homework/week11/modules/header.html");
+  $("#pageHead").load("/final/modulesFinal/headFinal.html");
   $("#page-nav").load("/final/modulesFinal/navFinal.html");
-  $("#footer-content").load("/homework/week11/modules/footer.html");
+  $(".page-footer").load("/final/modulesFinal/footerFinal.html");
+  $(".Adopted").load("/final/modulesFinal/left.html");
+  $(".Available").load("/final/modulesFinal/right.html");
+
 });

@@ -192,26 +192,24 @@
    
 }
 .title-video {
-        display: block;
-		width:  60%;
+        display: flex;
+		width:  100%;
 		height: auto;
-		margin: auto;
-        padding: 21px;
+		margin: 1.1;
+        
+        overflow: hidden;
         
     }
 .title-video+p {
 		clear: both;
     }
 .page-footer {
-    display: flex;
-    background-image: url(/final/imagesFinal/banner.jpg); 
-    background-repeat: no-repeat, no-repeat;
-    background-position: right, left;
+   background-color: lightgrey;
     
     background-size: 100% 100%;
 }
 
-@media (min-width: 768px) {
+
   .Page-body {
     flex-direction: row;
     flex: 1;
@@ -224,6 +222,5 @@
     flex: 0 0 12em;
   }
     .dropdown{display: none;}
-}
 
 }
