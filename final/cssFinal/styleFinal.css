@@ -119,6 +119,13 @@ p{
     background-color: slategrey;
 }
 
+.wire{
+     max-width: 100%;
+    max-height: auto;
+    vertical-align: middle;
+
+}
+
 @media (min-width: 450px){
 .Page {
   display: flex;
