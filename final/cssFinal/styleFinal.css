@@ -119,7 +119,7 @@ p{
     background-color: slategrey;
 }
 
-@media (min-width: 660px){
+@media (min-width: 450px){
 .Page {
   display: flex;
   min-height: 100vh;
@@ -150,6 +150,9 @@ p{
     flex-direction: column;
 }
    
+    p{
+        font-size: 1.5vw;
+    }
 
 .Adopted, .Available {
   /* 12em is the width of the columns */
