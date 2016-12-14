@@ -124,6 +124,10 @@ p{
 
 }
 
+ul{
+    font-size: 15pt;
+}
+
 @media (min-width: 450px){
 .page {
   display: flex;
@@ -154,6 +158,7 @@ p{
   flex: 1;
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
    
     p{
@@ -165,6 +170,7 @@ p{
 .adopted, .available {
   /* 12em is the width of the columns */
   flex: 0 0 12em;
+  padding-top: 10px;
 }
 
 .adopted {
@@ -238,8 +244,10 @@ p{
     }
 .page-footer {
    background-color: lightgrey;
-    
-    background-size: 100% 100%;
+   background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+
 }
 
 
