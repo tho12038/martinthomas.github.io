@@ -1,4 +1,4 @@
-$.getJSON( "../scripts/availablePets.json", function( data ) {
+$.getJSON( "../scripts/available-pets.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<img class='json_images' alt='" + key + "'src='" + val + "'/>" );

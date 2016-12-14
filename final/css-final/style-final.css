@@ -1,10 +1,11 @@
-.Page {
-     background-image: url(/final/imagesFinal/mobileBackground.jpg);
+.page {
+     
   display: flex;
-    background-repeat: no-repeat;
-  min-height: 100vh;
+   min-height: 100vh;
   flex-flow: column;
-    background-attachment: fixed;
+  background-image: url(/final/images-final/mobile-background.jpg);
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
     
 }
 
@@ -12,16 +13,12 @@
     
     background-color: slategrey;
 }
-.Main-content {
-  flex: 1;
-/*
 
-.Page-body{
-    background-image: url(/final/imagesFinal/mobileBackground.jpg);
-    background-repeat: no-repeat; 
-  background-size: 100% 100%;
-  background-attachment:fixed;
-*/
+.page-body{
+
+}
+.main-content {
+  flex: 1;
         
 }
 
@@ -47,6 +44,7 @@ p{
     font-size: 36px;
     border: none;
     cursor: pointer;
+   
    
 }
 
@@ -99,7 +97,7 @@ p{
     overflow: hidden;
 }
 
-#Application{
+#application{
     
     max-width: 100%;
     max-height: auto;
@@ -127,15 +125,16 @@ p{
 }
 
 @media (min-width: 450px){
-.Page {
+.page {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+    background-image: none;
 }
 
 .page-header {
     display: block;
-    background-image: url(/final/imagesFinal/banner.jpg); 
+    background-image: url(/final/images-final/banner.jpg); 
     background-repeat: no-repeat, no-repeat;
     background-position: right, left;
     position: right;
@@ -143,15 +142,15 @@ p{
     
 }
 
-.Page-body {
+.page-body {
   display: flex;
   flex: 1;
-  background-image: url(/final/imagesFinal/Background3.jpg);
+  background-image: url(/final/images-final/large-background.jpg);
   background-repeat: no-repeat; 
   background-size: 100% 100%;
   background-attachment:fixed;
 }
-.Main-content {
+.main-content {
   flex: 1;
     display: flex;
     flex-direction: column;
@@ -159,22 +158,24 @@ p{
    
     p{
         font-size: 1.5vw;
+        font-weight: 760;
+        text-decoration-color: black;
     }
 
-.Adopted, .Available {
+.adopted, .available {
   /* 12em is the width of the columns */
   flex: 0 0 12em;
 }
 
-.Adopted {
+.adopted {
   order: -1;
 }
-.Page, .Page-body {
+.page, .page-body {
   display: flex;
   flex-direction: column;
 }
 
-.Available {
+.available {
   order: 2;
 }
 
@@ -242,14 +243,14 @@ p{
 }
 
 
-  .Page-body {
+  .page-body {
     flex-direction: row;
     flex: 1;
   }
-  .Main-content {
+  .main-content {
     flex: 1;
   }
-  .Adopted, .Available {
+  .adopted, .available {
     /* 12em is the width of the columns */
     flex: 0 0 12em;
   }

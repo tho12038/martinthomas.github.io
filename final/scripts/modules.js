@@ -1,9 +1,9 @@
 $(function () {
-  $("#pageHead").load("/final/modulesFinal/headFinal.html");
-  $("#page-nav").load("/final/modulesFinal/navFinal.html");
-  $(".page-footer").load("/final/modulesFinal/footerFinal.html");
-  $(".Adopted").load("/final/modulesFinal/left.html");
-  $(".Available").load("/final/modulesFinal/right.html");
-  $(".dropdown").load("/final/modulesFinal/mobileNav.html");
+  $("#page-head").load("/final/modules-final/head-final.html");
+  $("#page-nav").load("/final/modules-final/nav-final.html");
+  $(".page-footer").load("/final/modules-final/footer-final.html");
+  $(".adopted").load("/final/modules-final/left.html");
+  $(".available").load("/final/modules-final/right.html");
+  $(".dropdown").load("/final/modules-final/mobile-nav.html");
 
 });
