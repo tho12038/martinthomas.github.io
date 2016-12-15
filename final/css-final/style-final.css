@@ -105,7 +105,7 @@ p{
 
 }
 
-.aboutUs{
+.about-us{
     
     max-width:100%;
     max-height:100%;
@@ -118,9 +118,10 @@ p{
 }
 
 .wire{
+    display: flex;
      max-width: 100%;
     max-height: auto;
-    vertical-align: middle;
+    
 
 }
 
