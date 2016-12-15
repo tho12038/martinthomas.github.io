@@ -118,11 +118,10 @@ p{
 }
 
 .wire{
-    display: flex;
+    
      max-width: 100%;
     max-height: auto;
-    
-
+    flex-direction: column;
 }
 
 ul{
